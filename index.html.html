@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes de Comunicación y Marketing</title>
+    <!-- Tailwind CSS para los estilos -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Navegación -->
+    <nav class="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <!-- Título / Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-xl font-bold text-brand-900 flex items-center gap-2">
+                        <i class="fa-solid fa-book-open text-brand-600"></i>
+                        <span>Apuntes C&M</span>
+                    </a>
+                </div>
+                <!-- Enlaces de Navegación (Desktop) -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-brand-600 font-medium border-b-2 border-brand-600 px-1 py-5">Inicio</a>
+                    <a href="#resumenes" class="text-slate-500 hover:text-brand-600 font-medium px-1 py-5 transition-colors">Resúmenes</a>
+                    <a href="#sobre-mi" class="text-slate-500 hover:text-brand-600 font-medium px-1 py-5 transition-colors">Sobre Mí</a>
+                </div>
+                <!-- Menú Móvil (Botón) -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-slate-500 hover:text-brand-600 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8 flex-grow w-full">
+        
+        <!-- Sección de Artículos (Grid de Clases) -->
+        <main class="flex-1" id="resumenes">
+            <div class="mb-8">
+                <h1 class="text-3xl font-bold text-slate-900 mb-2">Apuntes de Comunicación y Marketing</h1>
+                <p class="text-slate-600">Encuentra aquí todos los resúmenes de las clases, organizados y sintetizados para un mejor aprendizaje.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Tarjeta de Clase 1 -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x350/e2e8f0/475569?text=Clase+1" alt="Imagen representativa Clase 1" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 text-xs text-brand-600 font-semibold uppercase tracking-wider mb-2">
+                            <span>Marketing</span>
+                            <span>•</span>
+                            <span>Unidad 1</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-900 mb-2">Clase 1: Introducción a la Comunicación Estratégica</h2>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Aquí irá un breve resumen del primer PPT. Conceptos fundamentales de la comunicación, el rol del marketing en la sociedad actual y cómo se interrelacionan para crear valor.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="inline-flex items-center justify-center bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors w-full md:w-auto">
+                                Leer más <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta de Clase 2 -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x350/e2e8f0/475569?text=Clase+2" alt="Imagen representativa Clase 2" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 text-xs text-brand-600 font-semibold uppercase tracking-wider mb-2">
+                            <span>Comunicación</span>
+                            <span>•</span>
+                            <span>Unidad 1</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-900 mb-2">Clase 2: Estrategias de Posicionamiento</h2>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Este será el espacio para el segundo resumen. Exploraremos cómo las marcas construyen su identidad en la mente del consumidor y las tácticas para mantener la relevancia.</p>
+                        <div class="mt-auto">
+                            <a href="#" class="inline-flex items-center justify-center bg-brand-50 text-brand-700 hover:bg-brand-600 hover:text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors w-full md:w-auto">
+                                Leer más <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Tarjeta de Clase 3 (Plantilla Vacía) -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-md transition-shadow duration-300 flex flex-col">
+                    <img src="https://placehold.co/600x350/e2e8f0/475569?text=Clase+3" alt="Imagen representativa Clase 3" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex items-center gap-2 text-xs text-brand-600 font-semibold uppercase tracking-wider mb-2">
+                            <span>Marketing</span>
+                            <span>•</span>
+                            <span>Unidad 2</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-slate-900 mb-2">Clase 3: [Título del PPT 3]</h2>
+                        <p class="text-slate-600 text-sm mb-4 line-clamp-3">Próximamente... Aquí se añadirá el resumen de la tercera clase una vez que procesemos la presentación correspondiente.</p>
+                        <div class="mt-auto">
+                            <button disabled class="inline-flex items-center justify-center bg-slate-100 text-slate-400 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed w-full md:w-auto">
+                                Próximamente
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            
+            <!-- Paginación (Ejemplo visual) -->
+            <div class="mt-10 flex justify-center">
+                <nav class="flex items-center gap-2">
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-slate-500 hover:bg-slate-50 transition-colors" disabled>
+                        <i class="fa-solid fa-chevron-left text-sm"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-brand-600 text-white font-medium shadow-sm">1</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 font-medium transition-colors">2</button>
+                    <button class="w-10 h-10 flex items-center justify-center rounded-lg border border-slate-200 text-slate-700 hover:bg-slate-50 transition-colors">
+                        <i class="fa-solid fa-chevron-right text-sm"></i>
+                    </button>
+                </nav>
+            </div>
+        </main>
+
+        <!-- Barra Lateral (Sidebar) -->
+        <aside class="w-full lg:w-80 flex-shrink-0 space-y-6" id="sobre-mi">
+            
+            <!-- Widget de Perfil -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 text-center">
+                <div class="relative w-24 h-24 mx-auto mb-4">
+                    <img src="https://placehold.co/150x150/3b82f6/ffffff?text=AR" alt="Foto de perfil" class="rounded-full object-cover border-4 border-brand-50 w-full h-full shadow-sm">
+                </div>
+                <h3 class="text-lg font-bold text-slate-900">Abby</h3>
+                <p class="text-sm text-brand-600 font-medium mb-3">Estudiante de Comunicación y Marketing</p>
+                <p class="text-sm text-slate-600 mb-4 line-clamp-4">
+                    Documentando mi aprendizaje y compartiendo mis notas de clase en la <strong>Universidad ESAN</strong>. Apasionada por el marketing digital, las estrategias de comunicación y el análisis de comportamiento del consumidor.
+                </p>
+                
+                <!-- Enlaces Sociales -->
+                <div class="flex justify-center gap-3 mt-4 pt-4 border-t border-slate-100">
+                    <a href="https://github.com/abbyrom-lab" target="_blank" rel="noopener noreferrer" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-slate-800 hover:text-white transition-all shadow-sm" title="Mi perfil de GitHub">
+                        <i class="fa-brands fa-github text-lg"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-700 hover:bg-[#0A66C2] hover:text-white transition-all shadow-sm" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in text-lg"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Widget de Categorías / Etiquetas -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <h3 class="text-md font-bold text-slate-900 mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-tags text-brand-500"></i> Temas Principales
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full hover:bg-slate-200 cursor-pointer transition-colors">Marketing Digital</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full hover:bg-slate-200 cursor-pointer transition-colors">Relaciones Públicas</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full hover:bg-slate-200 cursor-pointer transition-colors">Branding</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full hover:bg-slate-200 cursor-pointer transition-colors">Publicidad</span>
+                    <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-medium rounded-full hover:bg-slate-200 cursor-pointer transition-colors">Investigación</span>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="bg-white border-t border-slate-200 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-sm text-slate-500">
+                &copy; 2024 Apuntes C&M por Abby. Todos los derechos reservados.
+            </p>
+            <p class="text-sm text-slate-500 flex items-center gap-1">
+                Hecho con <i class="fa-solid fa-heart text-red-500"></i> para estudiar mejor.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

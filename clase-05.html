@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 05 - El Viaje del Consumidor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    
+    <!-- Navegación -->
+    <nav class="bg-slate-900 text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-semibold text-lg hover:text-blue-300 transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Blog
+            </a>
+            <span class="text-sm font-bold tracking-widest uppercase text-blue-400">Universidad ESAN</span>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto my-10 p-6 sm:p-10">
+        
+        <!-- Cabecera -->
+        <header class="mb-12 bg-white p-8 rounded-2xl shadow-sm border border-slate-100 relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-blue-600"></div>
+            <span class="inline-flex items-center gap-2 text-blue-600 font-bold text-sm uppercase tracking-wider bg-blue-50 px-3 py-1 rounded-full mb-4">
+                <i class="fa-solid fa-map-location-dot"></i> Semana 05
+            </span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-tight mb-4">El Viaje del Consumidor (Customer Journey)</h1>
+            <p class="text-slate-500 text-lg flex items-center gap-2">
+                <i class="fa-solid fa-chalkboard-user"></i> Profesor: Mario Alonso Gallo Medina
+            </p>
+        </header>
+
+        <!-- 1. Psicología y Contexto -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-brain text-blue-600"></i> 1. Psicología y Contexto del Consumidor
+            </h2>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 mb-6">
+                <p class="text-slate-600 mb-4">Las decisiones nunca ocurren en el vacío; el <strong>contexto</strong> (el entorno físico/digital y la ocasión de consumo temporal o de propósito) determina la percepción de valor[cite: 262, 263].</p>
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
+                    <h3 class="font-bold text-blue-900 mb-2">El Espejismo del Marketing</h3>
+                    <p class="text-sm text-blue-800">Existe el mito de que "el marketing crea necesidades". Esto es falso. Las <strong>necesidades</strong> (biológicas o psicológicas) son inherentes al humano[cite: 265, 268]. Lo que el marketing realmente hace es <strong>moldear los deseos</strong>, canalizando esa necesidad hacia un satisfactor o marca específica[cite: 268].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Las 5 Etapas del Journey -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-route text-blue-600"></i> 2. Las 5 Etapas del Customer Journey
+            </h2>
+            <p class="text-slate-600 mb-8 text-lg">Es el recorrido conductual desde la inconsciencia hasta convertirse en embajador de la marca[cite: 270].</p>
+            
+            <div class="space-y-6">
+                <!-- Etapa 1 -->
+                <div class="flex flex-col md:flex-row gap-4 p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-blue-300 transition-colors">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0 md:pr-4">
+                        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center text-xl mb-2 font-bold">1</div>
+                        <h3 class="font-bold text-slate-900 text-center">Toma de Conciencia</h3>
+                        <span class="text-xs font-semibold text-blue-500 uppercase tracking-wide">Awareness</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <p class="text-sm text-slate-600 mb-2">El usuario pasa de la inconsciencia a la conciencia mediante un estímulo interno o externo[cite: 273, 274]. Como el consumidor es pasivo en esta fase, la estrategia debe <strong>interrumpir</strong> su rutina con impacto visual rápido[cite: 275].</p>
+                        <p class="text-xs text-slate-500"><strong>Métricas:</strong> Alcance (Reach) y Frecuencia, no conversión directa[cite: 275].</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 2 -->
+                <div class="flex flex-col md:flex-row gap-4 p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-blue-300 transition-colors">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0 md:pr-4">
+                        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center text-xl mb-2 font-bold">2</div>
+                        <h3 class="font-bold text-slate-900 text-center">Consideración</h3>
+                        <span class="text-xs font-semibold text-blue-500 uppercase tracking-wide">Búsqueda Activa</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <p class="text-sm text-slate-600 mb-2">El consumidor evalúa alternativas consultando fuentes (personales, públicas, comerciales) para formar su <em>Consideration Set</em>[cite: 279, 280]. Analiza <strong>drivers racionales</strong> (calidad-precio) y <strong>drivers emocionales</strong> (validación interna, estatus)[cite: 281, 282].</p>
+                        <p class="text-xs text-slate-500"><strong>Estrategia:</strong> Pasar a un modelo "Pull" (Atraer) mediante SEO y SEM (Google/YouTube)[cite: 283].</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 3 -->
+                <div class="flex flex-col md:flex-row gap-4 p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-blue-300 transition-colors">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0 md:pr-4">
+                        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center text-xl mb-2 font-bold">3</div>
+                        <h3 class="font-bold text-slate-900 text-center">Acción de Compra</h3>
+                        <span class="text-xs font-semibold text-blue-500 uppercase tracking-wide">Transacción</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <p class="text-sm text-slate-600 mb-2">El punto de no retorno. Se subdivide en: <strong>Pre-compra</strong> (eliminación absoluta de fricciones operativas), <strong>Momento de compra / FMOT</strong> (el ambiente retail o la experiencia UX/UI online), y <strong>Post-compra inmediata</strong> (salida y empaque)[cite: 286, 287, 288, 289, 290, 291].</p>
+                        <p class="text-xs text-slate-500"><strong>Reto:</strong> Mitigar la <em>Disonancia Cognitiva</em> (arrepentimiento) ayudando al cliente a racionalizar su gasto[cite: 293].</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 4 -->
+                <div class="flex flex-col md:flex-row gap-4 p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-blue-300 transition-colors">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0 md:pr-4">
+                        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center text-xl mb-2 font-bold">4</div>
+                        <h3 class="font-bold text-slate-900 text-center">Recompra</h3>
+                        <span class="text-xs font-semibold text-blue-500 uppercase tracking-wide">Fidelización</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <p class="text-sm text-slate-600 mb-2">La decisión deja de ser analítica y se vuelve un <strong>hábito</strong> automático. El objetivo financiero aquí es maximizar el LTV (Life Time Value) del cliente retenido[cite: 295].</p>
+                        <p class="text-xs text-slate-500"><strong>Herramientas:</strong> CRM, Email Marketing, Apps de Lealtad (Owned Media)[cite: 296, 297].</p>
+                    </div>
+                </div>
+
+                <!-- Etapa 5 -->
+                <div class="flex flex-col md:flex-row gap-4 p-6 bg-white rounded-xl shadow-sm border border-slate-100 hover:border-blue-300 transition-colors">
+                    <div class="md:w-1/4 flex flex-col items-center justify-center border-b md:border-b-0 md:border-r border-slate-100 pb-4 md:pb-0 md:pr-4">
+                        <div class="w-12 h-12 bg-slate-100 text-slate-600 rounded-full flex items-center justify-center text-xl mb-2 font-bold">5</div>
+                        <h3 class="font-bold text-slate-900 text-center">Recomendación</h3>
+                        <span class="text-xs font-semibold text-blue-500 uppercase tracking-wide">Advocacy</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <p class="text-sm text-slate-600 mb-2">El estado cúlmine de <em>Fulfillment</em> (plenitud). El cliente se convierte en embajador, detonando el <strong>Word of Mouth (WOM)</strong>, el cual reinicia el ciclo atrayendo a nuevos prospectos con costo de adquisición cero[cite: 299, 300].</p>
+                        <p class="text-xs text-slate-500"><strong>Herramientas:</strong> User Generated Content (UGC), programas de referidos, reseñas orgánicas[cite: 301, 302].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Modelo P.O.E. -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                <i class="fa-solid fa-bullhorn text-blue-600"></i> 3. La Batería Mediática (Modelo P.O.E.)
+            </h2>
+            <p class="text-slate-600 mb-8 text-lg">Para asignar el presupuesto eficientemente a lo largo del Journey, se clasifican los medios en tres frentes tácticos[cite: 269, 303, 304]:</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-t-red-500 border-x border-b border-slate-100">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3"><i class="fa-solid fa-money-bill-wave text-red-500 mr-2"></i> Paid Media</h3>
+                    <p class="text-sm text-slate-600 mb-4">Medios pagados para generar interrupción y alcance masivo (TV, OOH, Meta Ads, SEM)[cite: 269].</p>
+                    <span class="inline-block bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded font-semibold">Fases 1 y 2 (Conciencia)</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-t-blue-500 border-x border-b border-slate-100">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3"><i class="fa-solid fa-building-user text-blue-500 mr-2"></i> Owned Media</h3>
+                    <p class="text-sm text-slate-600 mb-4">Activos controlados por la marca para gestionar la experiencia y retener al usuario (Web, Tienda física, CRM)[cite: 269].</p>
+                    <span class="inline-block bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded font-semibold">Fases 3 y 4 (Acción y Recompra)</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-t-4 border-t-green-500 border-x border-b border-slate-100">
+                    <h3 class="font-bold text-lg text-slate-900 mb-3"><i class="fa-solid fa-hand-holding-heart text-green-500 mr-2"></i> Earned Media</h3>
+                    <p class="text-sm text-slate-600 mb-4">Menciones orgánicas ganadas por excelencia. Generan la máxima confianza (WOM, PR, UGC)[cite: 269].</p>
+                    <span class="inline-block bg-slate-100 text-slate-600 text-xs px-2 py-1 rounded font-semibold">Fase 5 (Recomendación)</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aprendizajes -->
+        <section>
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 text-white shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-lightbulb text-yellow-400"></i> Conclusiones de la Sesión
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-blue-400 mt-1"></i>
+                        <p class="text-sm text-slate-200"><strong>El marketing moldea deseos:</strong> Las necesidades son inherentes, pero la valoración del consumidor eleva un producto básico en la pirámide de Maslow[cite: 305].</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-blue-400 mt-1"></i>
+                        <p class="text-sm text-slate-200"><strong>Fricción vs. Satisfacción:</strong> Se debe eliminar toda fricción operativa al momento del pago (Acción) y gestionar activamente la disonancia cognitiva posterior para lograr fidelidad[cite: 305].</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-blue-400 mt-1"></i>
+                        <p class="text-sm text-slate-200"><strong>Asignación Estratégica:</strong> <em>Paid media</em> compra la atención inicial, <em>Owned media</em> asegura la experiencia de transacción, y <em>Earned media</em> valida la promesa con costo cero[cite: 305].</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

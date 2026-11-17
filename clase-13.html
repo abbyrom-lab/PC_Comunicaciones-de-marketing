@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 13 - Motores de Búsqueda (SEO y SEM)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    
+    <!-- Navegación -->
+    <nav class="bg-slate-900 text-white p-4 shadow-lg sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-semibold text-lg hover:text-green-400 transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> Volver al Blog
+            </a>
+            <span class="text-sm font-bold tracking-widest uppercase text-green-500">Universidad ESAN</span>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="max-w-5xl mx-auto my-10 p-6 sm:p-10">
+        
+        <!-- Cabecera -->
+        <header class="mb-12 bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-slate-100 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
+            
+            <div class="relative z-10">
+                <span class="inline-flex items-center gap-2 text-green-600 font-bold text-sm uppercase tracking-wider bg-green-50 px-4 py-2 rounded-full mb-6 shadow-sm">
+                    <i class="fa-solid fa-magnifying-glass"></i> Semana 13
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">Motores de Búsqueda: <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-500">SEO y SEM</span></h1>
+                <p class="text-slate-600 text-xl font-medium flex items-center gap-3">
+                    <img src="https://ui-avatars.com/api/?name=Mario+Alonso+Gallo&background=0D8ABC&color=fff&rounded=true" alt="Profesor" class="w-8 h-8 rounded-full shadow-sm">
+                    Profesor: Mario Alonso Gallo Medina
+                </p>
+            </div>
+        </header>
+
+        <!-- 1. CÓMO FUNCIONA GOOGLE -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm"><i class="fa-brands fa-google"></i></div>
+                <h2 class="text-3xl font-bold text-slate-900">1. La Biblioteca de Google</h2>
+            </div>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 mb-8">
+                <p class="text-slate-600 mb-6 text-lg">Google funciona como un bibliotecario muy rápido. El axioma es claro: <strong>si tu página no está en el catálogo de Google, no existe en la web[cite: 568].</strong> El proceso es el siguiente:</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                        <strong class="text-green-600 text-xl block mb-2">1. Rastrear</strong>
+                        <p class="text-sm text-slate-700">Los robots (crawlers) recorren la web siguiendo enlaces[cite: 568].</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                        <strong class="text-green-600 text-xl block mb-2">2. Indexar</strong>
+                        <p class="text-sm text-slate-700">Google guarda y clasifica la página (hace la ficha del libro)[cite: 568].</p>
+                    </div>
+                    <div class="p-4 bg-slate-50 rounded-lg border border-slate-200">
+                        <strong class="text-green-600 text-xl block mb-2">3. Ordenar</strong>
+                        <p class="text-sm text-slate-700">Recomienda las páginas más útiles primero (Ranking)[cite: 568].</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="font-bold text-xl text-slate-900 mb-4">La Intención de Búsqueda y el Embudo</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-slate-900 text-white p-6 rounded-xl border border-slate-700">
+                    <p class="text-sm text-slate-300 mb-4">Detrás de cada búsqueda hay una intención exacta[cite: 570]:</p>
+                    <ul class="space-y-3 text-sm">
+                        <li><i class="fa-solid fa-book-open text-green-400 w-5"></i> <strong>Informativa:</strong> Quiere aprender ("cómo preparar café")[cite: 570].</li>
+                        <li><i class="fa-solid fa-compass text-green-400 w-5"></i> <strong>Navegacional:</strong> Quiere llegar a un sitio ("instagram tostado")[cite: 570].</li>
+                        <li><i class="fa-solid fa-scale-balanced text-green-400 w-5"></i> <strong>Comercial:</strong> Compara antes de decidir ("mejor café")[cite: 570].</li>
+                        <li><i class="fa-solid fa-cart-shopping text-green-400 w-5"></i> <strong>Transaccional:</strong> Quiere comprar ya ("comprar café")[cite: 570].</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-xl border border-green-200">
+                    <p class="text-sm text-slate-700 mb-4">Cada etapa del embudo requiere mostrar una página distinta[cite: 571]:</p>
+                    <ul class="space-y-3 text-sm">
+                        <li><strong class="text-green-800">1. Conocer (Informativa):</strong> Se le muestra un artículo del <strong>Blog</strong>[cite: 571].</li>
+                        <li><strong class="text-green-800">2. Considerar (Comercial):</strong> Reseñas y la página de <strong>Producto</strong>[cite: 571].</li>
+                        <li><strong class="text-green-800">3. Comprar (Transaccional):</strong> Anuncio de búsqueda + Ficha de producto[cite: 571].</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SEO -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm"><i class="fa-solid fa-leaf"></i></div>
+                <h2 class="text-3xl font-bold text-slate-900">2. SEO: Aparecer sin pagar (Orgánico)</h2>
+            </div>
+            
+            <p class="text-slate-600 mb-6 text-lg">Es mejorar la web para aparecer en los resultados orgánicos. No es inmediato, se construye en meses, <strong>pero no se apaga cuando dejas de pagar</strong>[cite: 573].</p>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 mb-8">
+                <h3 class="font-bold text-xl text-slate-900 mb-4 border-b pb-2">El arte de la Palabra Clave (Keywords)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                    <div class="bg-red-50 p-4 rounded-lg border border-red-100">
+                        <strong class="text-red-600 block">Head (1-2 palabras)</strong>
+                        <p class="text-xs text-slate-600 mt-1">Ej: "Café". Muchísimo volumen, demasiada competencia. A evitar al inicio[cite: 574].</p>
+                    </div>
+                    <div class="bg-yellow-50 p-4 rounded-lg border border-yellow-100">
+                        <strong class="text-yellow-600 block">Middle (2-3 palabras)</strong>
+                        <p class="text-xs text-slate-600 mt-1">Ej: "Café de especialidad lima". Volumen medio[cite: 574].</p>
+                    </div>
+                    <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+                        <strong class="text-green-600 block">Long Tail (4+ palabras)</strong>
+                        <p class="text-xs text-slate-600 mt-1">Ej: "comprar café en miraflores". Poco volumen, pero <strong>alta intención de compra</strong> (La puerta de entrada)[cite: 574].</p>
+                    </div>
+                </div>
+                
+                <p class="text-sm font-semibold text-slate-800 mt-4">La Oportunidad de Oro: <span class="text-green-600">Alto Volumen + Baja Dificultad (KD).</span>[cite: 575]</p>
+            </div>
+
+            <!-- Redacción SEO -->
+            <div class="bg-white p-6 rounded-xl border-l-4 border-emerald-500 shadow-sm">
+                <h3 class="font-bold text-slate-900 mb-3"><i class="fa-solid fa-pen-nib text-emerald-500 mr-2"></i> Estructura On-Page (Dónde poner la Keyword)</h3>
+                <ul class="text-sm text-slate-700 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <li><i class="fa-solid fa-check text-emerald-500"></i> En el Título Principal (H1) y URL[cite: 577, 578].</li>
+                    <li><i class="fa-solid fa-check text-emerald-500"></i> En el primer párrafo y subtítulos (H2)[cite: 577, 578].</li>
+                    <li><i class="fa-solid fa-check text-emerald-500"></i> En el texto alternativo de las imágenes[cite: 577].</li>
+                    <li><i class="fa-solid fa-check text-emerald-500"></i> Enlaces internos (Llevar del Blog al Producto)[cite: 577, 578].</li>
+                </ul>
+                <p class="text-xs text-slate-500 mt-3 font-semibold uppercase tracking-wide">Regla: Escribe para humanos, no repitas la palabra a la fuerza (Keyword Stuffing)[cite: 578].</p>
+            </div>
+        </section>
+
+        <!-- 3. SEM -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <div class="w-12 h-12 bg-yellow-100 text-yellow-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm"><i class="fa-solid fa-bolt"></i></div>
+                <h2 class="text-3xl font-bold text-slate-900">3. SEM: Aparecer Pagando (Google Ads)</h2>
+            </div>
+            
+            <p class="text-slate-600 mb-8 text-lg">Ideal para lanzamientos y urgencias, funciona desde el día uno, pero <strong>se apaga si dejas de pagar</strong>[cite: 582].</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <!-- La Subasta -->
+                <div class="bg-slate-900 text-white p-6 rounded-xl border border-slate-700">
+                    <h3 class="font-bold text-xl text-yellow-400 mb-4">La Subasta: No siempre gana el que paga más</h3>
+                    <p class="text-sm text-slate-300 mb-4">La posición de tu anuncio depende de una fórmula matemática en tiempo real[cite: 583]:</p>
+                    <div class="flex items-center justify-center gap-3 bg-slate-800 p-4 rounded-lg">
+                        <span class="font-bold">Puja (Oferta $)</span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-plus"></i></span>
+                        <span class="font-bold">Calidad</span>
+                        <span class="text-yellow-400"><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="font-bold text-green-400">Ranking</span>
+                    </div>
+                    <p class="text-xs text-slate-400 mt-4">Si tienes una web excelente (alta calidad), puedes superar a un competidor que puja más dinero[cite: 583].</p>
+                </div>
+                
+                <!-- Anatomía Anuncio -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <h3 class="font-bold text-slate-900 mb-2">Anatomía del Anuncio</h3>
+                    <p class="text-xs text-slate-500 mb-4">Google combina títulos y descripciones según la búsqueda[cite: 585].</p>
+                    <ul class="text-sm text-slate-700 space-y-3 mb-4">
+                        <li><strong>Títulos (Máx 30 car.):</strong> Deben incluir la Keyword principal[cite: 585].</li>
+                        <li><strong>Descripciones (Máx 90 car.):</strong> Beneficio concreto + Call to Action[cite: 585].</li>
+                        <li><strong>Recursos (Extensiones):</strong> Agrandan el anuncio con links a otras páginas, botón de llamada o mapa local[cite: 586].</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Métricas Financieras -->
+            <div class="bg-green-50 p-6 rounded-xl border border-green-100">
+                <h3 class="font-bold text-green-900 mb-3"><i class="fa-solid fa-calculator"></i> Métricas Base en Soles (SEM)</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-center">
+                    <div class="bg-white p-3 rounded border border-slate-200"><strong>Impresiones</strong><br><span class="text-xs text-slate-500">Veces mostrado[cite: 587]</span></div>
+                    <div class="bg-white p-3 rounded border border-slate-200"><strong>CTR (%)</strong><br><span class="text-xs text-slate-500">Clics / Impresiones[cite: 587]</span></div>
+                    <div class="bg-white p-3 rounded border border-slate-200"><strong>CPC (S/)</strong><br><span class="text-xs text-slate-500">Costo por cada clic[cite: 587]</span></div>
+                    <div class="bg-white p-3 rounded border border-slate-200"><strong>CPA / Conversión</strong><br><span class="text-xs text-slate-500">Costo de la compra[cite: 587]</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aprendizajes -->
+        <section>
+            <div class="bg-gradient-to-br from-green-900 to-slate-900 rounded-2xl p-8 text-white shadow-lg">
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                    <i class="fa-solid fa-lightbulb text-yellow-400"></i> Conclusiones de la Sesión
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-green-400 mt-1"></i>
+                        <p class="text-sm text-slate-200"><strong>Google evalúa calidad:</strong> En SEM, la subasta no premia solo al que tiene más dinero, sino al anuncio que tiene mayor relevancia y mejor página de destino[cite: 583].</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-green-400 mt-1"></i>
+                        <p class="text-sm text-slate-200"><strong>El contenido resuelve la intención:</strong> Un artículo SEO responde a la intención <em>Informativa</em>, mientras que el anuncio SEM captura la intención <em>Transaccional</em> (lista para comprar)[cite: 571].</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fa-solid fa-check text-green-400 mt-1"></i>
+                        <p class="text-sm text-slate-200"><strong>SEO y SEM se complementan:</strong> El SEO se construye a largo plazo (autoridad), mientras que el SEM sirve como acelerador para resultados comerciales desde el día uno[cite: 582].</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
